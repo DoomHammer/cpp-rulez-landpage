@@ -5,8 +5,9 @@
         <img src="@/assets/cover.png" alt="" />
       </div>
       <div class="text">
-        <p><a href="#" class="join">Join</a><br />the release party of the</p>
-        <h2><span class="nowrap">Software Architecture with C++</span></h2>
+        <p class="smaller"><a href="#" class="join bigger">Join</a><br />the release party of the</p>
+        <h2 class="nowrap">Software Architecture with C++</h2>
+        <p class="smaller">by <span class="nowrap bigger">Adrian Ostrowski</span> and <span class="nowrap bigger">Piotr Gaczkowski</span></p>
       </div>
     </div>
     <div class="counter">00:00:00</div>
@@ -28,6 +29,14 @@ $colors: (
 .container {
   margin: auto;
   width: 70%;
+}
+
+.smaller {
+  font-size: 0.7em;
+}
+
+.bigger {
+  font-size: 1.4em;
 }
 
 .main {
@@ -84,6 +93,7 @@ $colors: (
   transition: all 0.5s;
   font-weight: bold;
   padding: 0.5em 1em;
+  animation: btnWiggle 5s infinite;
 
   &:after {
     background: rgba(0, 0, 0, 0) center 1.98em / 100% 8px no-repeat;
@@ -123,5 +133,12 @@ $colors: (
   100% {
     transform: translate3d(-75%, 0%, 0);
   }
+}
+@keyframes btnWiggle {
+	0% {-webkit-transform: rotate(0deg) scale(1);}
+	2% {-webkit-transform: rotate(-2deg) scale(1.1);}
+	3.5% {-webkit-transform: rotate(2deg) scale(0.9);}
+	5% {-webkit-transform: rotate(0deg) scale(1);}
+	100% {-webkit-transform: rotate(0deg) scale(1);}
 }
 </style>
