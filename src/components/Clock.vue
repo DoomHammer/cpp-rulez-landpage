@@ -35,6 +35,7 @@
 
 <script>
 import Replacer from "@/components/Replacer";
+import moment from "moment";
 
 export default {
   name: "Clock",
@@ -42,11 +43,14 @@ export default {
     Replacer,
   },
   data() {
+    const targetDate = moment("2021-04-09 16:00 +0000", "YYYY-MM-DD HH:mm Z"); // parsed as UTC
+    const now = moment();
+    
     return {
-      days: 10,
-      hours: 10,
-      minutes: 10,
-      seconds: 8,
+      days: targetDate.diff(now, "days"),
+      hours: targetDate.diff(now, "hours") % 24,
+      minutes: targetDate.diff(now, "minutes") % 60,
+      seconds: targetDate.diff(now, "seconds") % 60,
       handler: "",
     };
   },
