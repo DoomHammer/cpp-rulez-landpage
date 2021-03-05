@@ -5,18 +5,29 @@
         <img src="@/assets/cover.png" alt="" />
       </div>
       <div class="text">
-        <p class="smaller"><a href="#" class="join bigger">Join</a><br />the release party of the</p>
+        <p class="smaller">
+          <a href="#" class="join bigger">Join</a><br />the release party of the
+        </p>
         <h2 class="nowrap">Software Architecture with C++</h2>
-        <p class="smaller">by <span class="nowrap bigger">Adrian Ostrowski</span> and <span class="nowrap bigger">Piotr Gaczkowski</span></p>
+        <p class="smaller">
+          by <span class="nowrap bigger">Adrian Ostrowski</span> and
+          <span class="nowrap bigger">Piotr Gaczkowski</span>
+        </p>
       </div>
     </div>
-    <div class="counter">00:00:00</div>
+    <div class="countdown">
+      <h3>Coming soon!</h3>
+      <Clock />
+    </div>
   </div>
 </template>
 
 <script>
+import Clock from "@/components/Clock.vue";
+
 export default {
   name: "Home",
+  components: { Clock },
 };
 </script>
 <style lang="scss" scoped>
@@ -56,7 +67,7 @@ $colors: (
   img {
     max-width: 100%;
     transform: scale3d(1, 1, 1) rotateY(-10deg);
-    box-shadow: 15px 20px 35px #005;
+    box-shadow: 15px 20px 35px #224;
   }
 }
 
@@ -126,6 +137,16 @@ $colors: (
   }
 }
 
+.countdown {
+  h3 {
+    text-align: center;
+    padding: 1em;
+    margin: 0 2rem;
+    letter-spacing: 0.1em;
+    font-size: 1.7em;
+  }
+}
+
 @keyframes underline-gradient {
   0% {
     transform: translate3d(0%, 0%, 0);
@@ -135,10 +156,20 @@ $colors: (
   }
 }
 @keyframes btnWiggle {
-	0% {-webkit-transform: rotate(0deg) scale(1);}
-	2% {-webkit-transform: rotate(-2deg) scale(1.1);}
-	3.5% {-webkit-transform: rotate(2deg) scale(0.9);}
-	5% {-webkit-transform: rotate(0deg) scale(1);}
-	100% {-webkit-transform: rotate(0deg) scale(1);}
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+  2% {
+    -webkit-transform: rotate(-2deg) scale(1.1);
+  }
+  3.5% {
+    -webkit-transform: rotate(2deg) scale(0.9);
+  }
+  5% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
 }
 </style>

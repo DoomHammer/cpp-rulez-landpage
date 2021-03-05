@@ -14,11 +14,10 @@
 }
 
 body{
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,169,252,1) 100%);
   font-size: 16px;
   font-family: 'Noto Sans JP', sans-serif;
   color: white;
+  background-color: #292929;
 }
 
 a,a:visited,a:active{
