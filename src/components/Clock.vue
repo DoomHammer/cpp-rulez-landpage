@@ -45,7 +45,7 @@ export default {
   data() {
     const targetDate = moment("2021-04-09 16:00 +0000", "YYYY-MM-DD HH:mm Z"); // parsed as UTC
     const now = moment();
-    
+
     return {
       days: targetDate.diff(now, "days"),
       hours: targetDate.diff(now, "hours") % 24,
@@ -118,5 +118,11 @@ export default {
     padding: 1em;
   }
   box-shadow: 1px 1px 15px 1px darken(#f5711c, 50%);
+}
+
+@media only screen and (max-width: 500px) {
+  .numbers .box {
+    width: 40%;
+  }
 }
 </style>

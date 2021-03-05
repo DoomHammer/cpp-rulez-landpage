@@ -10,8 +10,8 @@
         </p>
         <h2 class="nowrap">Software Architecture with C++</h2>
         <p class="smaller">
-          by <span class="nowrap bigger">Adrian Ostrowski</span> and
-          <span class="nowrap bigger">Piotr Gaczkowski</span>
+          by <span class="nowrap-s bigger">Adrian Ostrowski</span> and
+          <span class="nowrap-s bigger">Piotr Gaczkowski</span>
         </p>
       </div>
     </div>
@@ -96,7 +96,7 @@ $colors: (
     }
   }
 
-  .nowrap {
+  .nowrap, .nowrap-s {
     white-space: nowrap;
   }
 }
@@ -181,6 +181,53 @@ $colors: (
   }
   100% {
     -webkit-transform: rotate(0deg) scale(1);
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover {
+    max-width: 60%;
+    margin-bottom: 4em;
+    margin-right: 0;
+    perspective: initial;
+
+    img {
+      box-shadow: 0 0 65px #224;
+    }
+  }
+
+  .countdown {
+    margin-bottom: 5em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main {
+    padding: 0;
+  }
+  
+  .cover {
+    max-width: 80%;
+  }
+  .text .nowrap {
+    white-space: initial;
   }
 }
 </style>

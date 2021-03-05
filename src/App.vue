@@ -29,4 +29,10 @@ a,a:visited,a:active{
   color: black;
   background: #f5711c;
 }
+
+@media only screen and (max-width: 800px) {
+  body{
+    font-size: 12px;
+  }
+}
 </style>
