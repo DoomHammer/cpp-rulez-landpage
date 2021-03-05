@@ -6,7 +6,7 @@
       </div>
       <div class="text">
         <p class="smaller">
-          <a href="#" class="join bigger">Join</a><br />the release party of the
+          <a href="#" class="join bigger">Join</a><br />the release party of
         </p>
         <h2 class="nowrap">Software Architecture with C++</h2>
         <p class="smaller">
