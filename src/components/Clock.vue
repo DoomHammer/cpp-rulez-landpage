@@ -1,5 +1,5 @@
 <template>
-  <div class="clock">
+  <div class="clock" :title="targetDate">
     <div class="numbers">
       <div class="box">
         <div class="header">Days</div>
@@ -51,6 +51,7 @@ export default {
       hours: targetDate.diff(now, "hours") % 24,
       minutes: targetDate.diff(now, "minutes") % 60,
       seconds: targetDate.diff(now, "seconds") % 60,
+      targetDate: targetDate.format(),
       handler: "",
     };
   },

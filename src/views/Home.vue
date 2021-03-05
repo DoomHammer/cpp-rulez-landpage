@@ -18,6 +18,7 @@
     <div class="countdown">
       <h3>Coming soon!</h3>
       <Clock />
+      <p class="date">9th april 2021 <span class="mainc">16:00</span>-18:00</p>
     </div>
   </div>
 </template>
@@ -48,6 +49,10 @@ $colors: (
 
 .bigger {
   font-size: 1.4em;
+}
+
+.mainc {
+  color: #f5711c;
 }
 
 .main {
@@ -144,6 +149,12 @@ $colors: (
     margin: 0 2rem;
     letter-spacing: 0.1em;
     font-size: 1.7em;
+  }
+
+  .date {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.4em;
   }
 }
 
