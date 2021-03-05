@@ -18,7 +18,7 @@
     <div class="countdown">
       <h3>Coming soon!</h3>
       <Clock />
-      <p class="date">9th april 2021 <span class="mainc">16:00</span>-18:00</p>
+      <p class="date">9th April 2021 <span class="mainc">16:00</span>-18:00 GMT</p>
     </div>
   </div>
 </template>
