@@ -24,4 +24,9 @@ a,a:visited,a:active{
   color: white;
   text-decoration: none;
 }
+
+::selection {
+  color: black;
+  background: #f5711c;
+}
 </style>
