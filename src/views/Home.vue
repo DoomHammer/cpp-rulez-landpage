@@ -19,6 +19,12 @@
       <h3>Coming soon!</h3>
       <Clock />
       <p class="date">9th April 2021 <span class="mainc">16:00</span>-18:00 GMT</p>
+      <p class="date">
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20210409T150000Z%2F20210409T170000Z&details=Come%20join%20our%20party%21%20You%27re%20invited.%0A%0AThe%20meeting%20link%20will%20appear%20at%20https%3A%2F%2Freleaseparty.netlify.app%20an%20hour%20before%20the%20party.&location=https%3A%2F%2Freleaseparty.netlify.app&text=Release%20Party%20%7C%20Software%20Architecture%20with%20C%2B%2B" class="addToCalendar">Add to Calendar (Google)</a>
+    <a href="https://outlook.live.com/calendar/0/deeplink/compose?body=Come%20join%20our%20party%21%20You%27re%20invited.%0A%0AThe%20meeting%20link%20will%20appear%20at%20https%3A%2F%2Freleaseparty.netlify.app%20an%20hour%20before%20the%20party.&enddt=2021-04-09T17%3A00%3A00%2B00%3A00&location=https%3A%2F%2Freleaseparty.netlify.app&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-04-09T15%3A00%3A00%2B00%3A00&subject=Release%20Party%20%7C%20Software%20Architecture%20with%20C%2B%2B" class="addToCalendar">Add to Calendar (Outlook)</a>
+    <a href="https://outlook.office.com/calendar/0/deeplink/compose?body=Come%20join%20our%20party%21%20You%27re%20invited.%0A%0AThe%20meeting%20link%20will%20appear%20at%20https%3A%2F%2Freleaseparty.netlify.app%20an%20hour%20before%20the%20party.&enddt=2021-04-09T17%3A00%3A00%2B00%3A00&location=https%3A%2F%2Freleaseparty.netlify.app&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2021-04-09T15%3A00%3A00%2B00%3A00&subject=Release%20Party%20%7C%20Software%20Architecture%20with%20C%2B%2B" class="addToCalendar">Add to Calendar (Office 365)</a>
+    <a href="/releaseparty.ics" class="addToCalendar">Add to Calendar (iCalendar and others)</a>
+    </p>
     </div>
   </div>
 </template>
@@ -37,6 +43,8 @@ $colors: (
   "second": #f5711c,
   "black": #141414,
 );
+
+.addToCalendar {background-color:#44c767;border-radius:28px;border:1px solid #18ab29;display:inline-block;cursor:pointer;color:#ffffff;font-family:Arial;font-size:14px;padding:16px 31px;text-decoration:none;text-shadow:0px 1px 0px #2f6627;}.addToCalendar:hover {background-color:#5cbf2a;}.addToCalendar:active {position:relative;top:1px;}
 
 .container {
   margin: auto;
