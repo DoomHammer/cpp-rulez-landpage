@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20210409T150000Z
+DTEND:20210409T170000Z
+SUMMARY:Release Party | Software Architecture with C++
+DESCRIPTION:Come join our party! You're invited.\n\nThe meeting link will appear at https://releaseparty.netlify.app an hour before the party.
+LOCATION:https://releaseparty.netlify.app
+END:VEVENT
+END:VCALENDAR
