@@ -43,7 +43,7 @@ export default {
     Replacer,
   },
   data() {
-    const targetDate = moment("2021-04-09 16:00 +0000", "YYYY-MM-DD HH:mm Z"); // parsed as UTC
+    const targetDate = moment("2021-04-09 15:00 +0000", "YYYY-MM-DD HH:mm Z"); // parsed as UTC
     const now = moment();
 
     return {
