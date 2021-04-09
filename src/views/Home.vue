@@ -155,6 +155,17 @@ $colors: (
     margin: 0 2rem;
     letter-spacing: 0.1em;
     font-size: 1.7em;
+    
+    & a {
+      padding: 0.5em 1em;
+      border: 2px solid #f5711c;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #3d3d3d;
+        color: #f5711c;
+      }
+    }
   }
 
   .date {
