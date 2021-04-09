@@ -112,6 +112,9 @@ $colors: (
   font-weight: bold;
   padding: 0.5em 1em;
   animation: btnWiggle 5s infinite;
+  background-color: rgba(41, 41, 41, 0.6);
+  border: none;
+  color: white;
 
   &:after {
     background: rgba(0, 0, 0, 0) center 1.98em / 100% 8px no-repeat;
@@ -126,10 +129,10 @@ $colors: (
     transition: all 0.5s;
 
     content: "";
-    height: 100%;
+    height: 110%;
     left: 0;
-    position: absolute;
     top: 5px;
+    position: absolute;
     width: 400%;
     will-change: transform;
     z-index: -1;
@@ -140,6 +143,7 @@ $colors: (
     &:after {
       background-size: 100% 100%;
       background-position-y: center;
+      top: 0;
     }
   }
 }
