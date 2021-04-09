@@ -43,8 +43,9 @@ export default {
     Replacer,
   },
   data() {
-    const targetDate = moment("2021-04-09 16:00 +0000", "YYYY-MM-DD HH:mm Z"); // parsed as UTC
+    const targetDate = moment("2021-04-09 15:00 +0000", "YYYY-MM-DD HH:mm Z"); // parsed as UTC
     const now = moment();
+    const freeze = now.isAfter(targetDate);
 
     return {
       days: targetDate.diff(now, "days"),
@@ -53,6 +54,7 @@ export default {
       seconds: targetDate.diff(now, "seconds") % 60,
       targetDate: targetDate.format(),
       handler: "",
+      freeze
     };
   },
   created() {
@@ -66,6 +68,11 @@ export default {
       --this.seconds;
 
       if (this.seconds < 0) {
+        if (this.minutes <= 0 && this.hours <= 0){
+          this.freeze = true;
+          return;
+        }
+
         this.seconds = 59;
         --this.minutes;
       }
@@ -81,6 +88,8 @@ export default {
       }
     },
     singleChar(prop, i) {
+      if (this.freeze) return "0";
+      
       const vs = this[prop].toString();
 
       if (vs.length < 2) {
